@@ -8,12 +8,12 @@ class UserDefinedExceptions extends Exception
 }
  class EmployeeTest
 {
-	static void d1(int age) throws UserDefinedExceptions
+	static void d1(int age) throws UserDefinedExceptions //exception declaration
 	{
 		if(age<0)
 		{
 			UserDefinedExceptions obj=new UserDefinedExceptions("Age can't be less than zero");
-			throw obj;
+			throw obj; //throwing an exception
 		}
 		else
 		{

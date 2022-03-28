@@ -1,5 +1,6 @@
 package assingment;
-//question5 to find the maximum occurring character in a string.
+//question5 Java program to print the frequency of each character in a string
+
 public class Occurances {
 
 	public static void main(String[] args) {

@@ -15,6 +15,6 @@ static void checkAge(int age)
 	public static void main(String args[])
 	{
 		
-		checkAge(18);
+		checkAge(15);
 	}
 }
