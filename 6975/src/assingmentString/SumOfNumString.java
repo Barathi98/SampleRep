@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //to calculate the sum of numbers given in the string
 import java.util.*;
 	public class SumOfNumString {

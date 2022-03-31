@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //comparing the strings with ignoring the case
 //question 2 upper case and lower case
 public class Question1 {

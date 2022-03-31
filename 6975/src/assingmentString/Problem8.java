@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //to check whether the character immediately before and after a specified character is same in a given string.
 import java.util.*;
 public class Problem8 {

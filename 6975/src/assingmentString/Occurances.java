@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //question5 Java program to print the frequency of each character in a string
 
 public class Occurances {

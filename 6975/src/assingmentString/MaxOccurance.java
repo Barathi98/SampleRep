@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 
 public class MaxOccurance {
 

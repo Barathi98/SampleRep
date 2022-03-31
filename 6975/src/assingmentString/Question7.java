@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //Write a Java program to count how many times the substring
 public class Question7 {
 

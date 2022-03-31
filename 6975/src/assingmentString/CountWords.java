@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 //problem 10- to find number of words ending with n or m
 import java.util.*;
 	public class CountWords {

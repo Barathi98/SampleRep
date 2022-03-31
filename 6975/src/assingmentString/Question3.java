@@ -1,4 +1,4 @@
-package assingment;
+package assingmentString;
 import java.util.*;
 //removing the duplicate characters
 public class Question3 {
