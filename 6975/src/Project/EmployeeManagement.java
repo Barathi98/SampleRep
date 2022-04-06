@@ -26,10 +26,10 @@ class Employee10{
 	
 }
 public class EmployeeManagement {
-	static void display(ArrayList<Employee10>list)
+	static void display(ArrayList<Employee10>al)
 	{
 		System.out.println("***************Employee List***************");
-		for(Employee10 e:list)
+		for(Employee10 e:al)
 		{
 			System.out.println("\nID: "+e.id+"  "+"\nName: "+e.Name+"  "+"\nMobile Number: "+e.Mobile_Number+"  "+"\nEmail-Id: "+e.Email_id);
 			
@@ -37,7 +37,8 @@ public class EmployeeManagement {
 	}
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 		int id;
 		String Name;
@@ -78,7 +79,9 @@ public class EmployeeManagement {
 				{
 					System.out.println(e+"\n");
 					i++;
+					break;
 				}
+				
 			}
 			if(i==0)
 			{
@@ -139,6 +142,8 @@ public class EmployeeManagement {
 			case 4:System.out.println("\nEnter Employee Id to delete from the database: ");
 			 id=sc.nextInt();
 			 int k=0;
+			 try
+			 {
 			 for(Employee10 e:al)
 			 {
 			   if(id==e.id)
@@ -151,6 +156,11 @@ public class EmployeeManagement {
 			 if(k==0)
 			 {
 				 System.out.println("\n Please Enter a valid Employee Id");
+			 }
+			 }
+			 catch(Exception e)
+			 {
+				 System.out.println(e);
 			 }
 			 break;
 			case 5:System.out.println("\nEmployee Details..... ");

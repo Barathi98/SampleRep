@@ -49,6 +49,9 @@ package multiThreading;
 		thread3.bookticket=3;
 		thread3.start();
 		
+		
+		
+		
 
 	}
 	}
