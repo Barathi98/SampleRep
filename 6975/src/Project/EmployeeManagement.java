@@ -39,13 +39,21 @@ public class EmployeeManagement {
 
 	public static void main(String[] args) 
 	{
-		
+		String un="Barathi";
+		int password=1998;
+		Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the username");
+        String username=sc.next();
+        System.out.println("Enter the password");
+        int password1=sc.nextInt() ;
+        if((un.equals(username)) && (password==password1))
+        {
+        	System.out.println("logged in successfully...."); 
 		int id;
 		String Name;
 		String Address;
 		long Mobile_Number;
 		String Email_id;
-		Scanner sc=new Scanner(System.in);
 		ArrayList<Employee10> al=new ArrayList<Employee10>();
 		do
 		{
@@ -176,5 +184,10 @@ public class EmployeeManagement {
 
 	}
 		while(true);
+        }
+        else
+        {
+        	System.out.println("Invalid username or passowrd");
+        }
 }
 }
