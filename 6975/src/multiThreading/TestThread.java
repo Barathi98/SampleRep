@@ -52,7 +52,7 @@ public class TestThread {
 
 		// wait for threads to end
 		try {
-			T1.join();
+			T1.join(); //check whether the running thread(t1) is dead or not
 			T2.join();
 		} catch (Exception e) {
 			System.out.println("Interrupted");
