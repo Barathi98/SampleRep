@@ -13,7 +13,7 @@ public class InnerJoin {
 //			//left join
 //			String leftjoin=" SELECT Customer.CustomerName,Orders.OrderId FROM Customer LEFT JOIN Orders ON Customer.CustomerId=Orders.CustomerId ORDER BY Customer.CustomerName";
 //			String rightjoin="SELECT Orders.OrderId,Customer.CustomerName,customer.ContactName from orders RIGHT JOIN"
-//					+"customer ON Orders.CustomerId=Customer.CustomerId";
+//					+" customer ON Orders.CustomerId=Customer.CustomerId";
 //			String crossjoin="SELECT Customer.CustomerName,Shipper.ShipperName from Shipper CROSS JOIN Customer";
 			String selfJoin="SELECT A.CustomerName AS CustomerName1,B.CustomerName AS CustomerName2,"
 					+ "A.City FROM Customer A,Customer B WHERE A.CustomerId<>B.CustomerId AND A.City=B.City ORDER BY"
@@ -23,7 +23,7 @@ public class InnerJoin {
 //			System.out.println("--------------------------------------------");
 			while(result.next())
 			{
-				System.out.println(result.getString(1)+"------"+result.getString(2)+"------"+result.getString(3));
+				System.out.println(result.getString(1)+"   "+result.getString(2)+"  "+result.getString(3));
 			}
 		}
 		catch (ClassNotFoundException e) 

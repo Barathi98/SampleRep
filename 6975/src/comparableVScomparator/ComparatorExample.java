@@ -1,5 +1,5 @@
 package comparableVScomparator;
-
+//Comparator
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -15,7 +15,7 @@ class Movie {
 		this.year = year;
 	}
 
-	public double setRating() {
+	public double setRating(double rating) {
 		return this.rating = rating;
 
 	}
@@ -24,7 +24,7 @@ class Movie {
 		return rating;
 	}
 
-	public String setName() {
+	public String setName(String name) {
 		return this.name = name;
 	}
 
@@ -32,7 +32,7 @@ class Movie {
 		return name;
 	}
 
-	public int setYear() {
+	public int setYear(int year) {
 		return this.year = year;
 	}
 
