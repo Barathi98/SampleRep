@@ -24,11 +24,13 @@ public class MethodReferenceExample1 {
 	{
 		Engine obj=()->System.out.println("Speed is good");
         obj.speed();
-        Engine obj1=Car::average;
+        Engine obj1=Car::average; //reference to a static method
         obj1.speed();
         Car c=new Car();
         Engine obj2=c::wheel;
-        Engine obj3=Car::new;
+        obj2.speed();//reference to a instance method
+        Engine obj3=Car::new; //reference to a constructor
+        
 	}
 
 }
