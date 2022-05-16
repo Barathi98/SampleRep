@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+     <!--    private Set<Integer> employeeId;
+ private List<String> employeeName;
+ private Map<Integer,String> employeeDId,employeeDepartment; -->
+        <bean class="com.Collection.Employee" id="employee"> 
+        <property name="employeeId">
+         <set> 
+           <value>101</value>
+            <value>102</value>
+             <value>103</value>
+         </set> </property>    
+         <property name="employeeName">
+         <list>
+         <value>Barathi</value>
+           <value>Aruna</value>
+             <value>Nikita</value>
+         </list>
+         
+         </property>
+         <property name="employeeDetail">
+         <map>
+         <entry key="1" value="Accounts"></entry>
+         <entry key="2" value="Sales"></entry>
+         <entry key="3" value="Quality"></entry>
+        
+         
+         </map>
+         
+         </property>
+           
+        </bean>
+        
+
+</beans>

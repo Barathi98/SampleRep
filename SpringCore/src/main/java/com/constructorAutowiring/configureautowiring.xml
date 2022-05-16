@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> 
+       <bean class="com.autowiring.Student" id="Student" autowire="constructor"> 
+      <constructor-arg value="1"/>   
+    <constructor-arg value="Aruna"/>  
+    <constructor-arg value="22"/> 
+       
+       
+        
+ </bean>  
+ <bean class="com.autowiring.Address" id="address"> 
+   <constructor-arg value="16"/> 
+   <constructor-arg value="Chennai"/>
+   <constructor-arg value="Tamilnadu"/>
+   <constructor-arg value="India"/>
+   
+      </bean>   
+</beans>
